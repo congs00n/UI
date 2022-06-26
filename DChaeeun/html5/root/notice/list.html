@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- 아래 두 줄은 반응형 이야기 할 때 
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    -->
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+          경로를 지정하기 위해서는 경로를 정하는 문서(html) 기준으로 생각해야 함
+          나 지금 어느 경로에 위치했지? >> notice의 list.html !! 
+          즉, 공지사항 목록에 위치하고 있음!! 
+    1. index를 찾아가기 위해서는 공지사항 목록의 상위폴더로 이동해야 함
+    2. list는 자기 자신이므로 변경하지 않아도 됨 
+    3. 로그인 페이지는 (1) 상위 폴더 이동(../) (2) member폴더 내의 login.html찾아가기(member/login.html) 
+    3. 회원가입 페이지는 (1) 상위 폴더 이동(../) (2) member폴더 내의 signup-agree.html찾아가기(member/signup-agree.html) 
+    
+  -->
+    <a href="../index.html"> 홈</a>
+    <a href="list.html"> 공지사항목록</a>
+    <a href="../member/login.html"> 로그인</a>
+    <a href="../member/signup-agree.html"> 회원가입</a>
+    <h1> 공지사항목록 </h1>
+</body>
+
+</html>
