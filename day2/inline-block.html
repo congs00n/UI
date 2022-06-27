@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <!-- CSS영역!!
+    head 영역에는 CSS 개발!  -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <title>인라인요소와 블록요소</title>
+    <style>
+        div
+        {
+            display : block;
+            width:300px;
+            height:300px;
+            border: 3px solid black;
+            background-color: rgb(127, 255, 212);
+        }
+        /* # 은 id를 의미한다. d_2라는 아이디 */
+        div#d_2 {
+            display : inline block;
+            width:300px;
+            height:300px;
+            border:3px solid black;
+            background-color: rgb(3, 246, 120);
+        }
+        span{
+            display: block;
+            width : 350px;
+            height: 200px;
+            background-color: blanchedalmond;
+        }
+        /* .은 클래스를 의미한다. */
+        .s2{
+            background-color: blueviolet;
+        }
+        .s3{
+            background-color: yellowgreen;
+        }
+
+      
+    </style>       
+</head>
+<body> 
+    <div>Div1</div>
+    <div id="d_2" class="cd_2">Div2</div>
+    <span>Span</span>
+    <span class="s2">Span2</span>
+    <span class="s3">Span3</span>
+    <h1>블록요소 h1</h1>
+
+</body>
+</html>
+<!-- 
+    spam 태그는 글자 요소, 인라인 요소, 왼>오른쪽으로 수평적으로 쌓인다 남는 크기가 있으면 줄어든다. 
+    자체 크기를 가지지 않기 때문에 크기를 지정할 수 없다. 
+
+    div태그는 블록 태그이고, 크기를 가진다(가로, 세로 지정가능)
+    또한 브록요소는 크기를 변경할 수 있다.
+    display 속성에 inline block 을 주면 두 가지를 다 사용가능하다.
+    display 에 none 을 주면 화면에 안보임 jf.setVisible(false);
+-->
